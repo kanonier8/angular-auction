@@ -1,0 +1,13 @@
+<div class="product-card">
+    <header class="product-card-header">
+        <img class="product-card-image" src="http://placehold.it/320x150" alt="">
+    </header>
+    <article class="product-card-body">
+        <strong class="product-card-price"> {{product.price}} </strong>
+        <h2 class="product-card-title"> {{product.title}} </h2>
+        <p class="product-card-description"> {{product.description}} </p>
+    </article>
+    <footer class="product-card-footer">
+        <auction-stars [rating]="product.rating"></auction-stars>
+    </footer>
+</div>

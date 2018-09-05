@@ -1,0 +1,15 @@
+<auction-navbar></auction-navbar>
+    <div class="container">
+        <div class="search">
+            <auction-search></auction-search>
+        </div>
+        <div class="carousel">
+            <auction-carousel></auction-carousel>
+        </div>
+        <ul class="products-list">
+                <li *ngFor="let product of products" class="product-item">
+                        <auction-product [product]="product"></auction-product>
+                </li>
+        </ul>
+    </div>
+<auction-footer></auction-footer>
